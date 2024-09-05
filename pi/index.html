@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Arquivos do Firebase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Galeria de Arquivos</h1>
+
+    <!-- Dropdown para seleção de pasta -->
+    <div>
+        <label for="folder-select">Selecione uma pasta:</label>
+        <select id="folder-select">
+            <option value="" disabled selected>Selecione uma pasta</option>
+        </select>
+    </div>
+
+    <div>
+        <input type="file" id="file-input">
+        <button id="upload-btn">Upload</button>
+    </div>
+
+    <div id="file-container"></div>
+
+    <!-- Incluindo o Firebase SDK -->
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
